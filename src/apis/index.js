@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const URL_API = "http://localhost:8080";
+const URL_API = "https://bookingplane.onrender.com";
+
+
 
 export const signUpAPI = async (accountData) => {
     const res = await axios.post(`${URL_API}/api/accounts/create`, accountData);
