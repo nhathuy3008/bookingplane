@@ -19,7 +19,7 @@ public class EmailService {
 
     public void sendVerificationEmail(String to, String token, String email) throws MessagingException {
         String subject = "Xác nhận đăng ký tài khoản - TniCiu Travel";
-        String verificationLink = "http://localhost:8080/verify?token=" + token + "&email=" + email;
+        String verificationLink = "https://bookingplane.onrender.com/verify?token=" + token + "&email=" + email;
 
         String content = "<html>"
                 + "<body style=\"font-family: Arial, sans-serif; line-height: 1.6; background-color: #f9f9f9; margin: 0; padding: 0;\">"
